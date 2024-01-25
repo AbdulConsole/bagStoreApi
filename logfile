@@ -1,0 +1,64 @@
+2024-01-25 01:57:03.161 WAT [5458] LOG:  starting PostgreSQL 16.1 on aarch64-unknown-linux-android, compiled by Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), 64-bit
+2024-01-25 01:57:03.163 WAT [5458] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2024-01-25 01:57:03.166 WAT [5458] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2024-01-25 01:57:03.176 WAT [5463] LOG:  database system was shut down at 2024-01-25 01:56:44 WAT
+2024-01-25 01:57:03.189 WAT [5458] LOG:  database system is ready to accept connections
+2024-01-25 01:59:31.723 WAT [5861] FATAL:  role "abdul" does not exist
+2024-01-25 02:02:03.186 WAT [5461] LOG:  checkpoint starting: time
+2024-01-25 02:03:40.666 WAT [5461] LOG:  checkpoint complete: wrote 964 buffers (5.9%); 0 WAL file(s) added, 0 removed, 0 recycled; write=97.141 s, sync=0.313 s, total=97.480 s; sync files=314, longest=0.005 s, average=0.001 s; distance=4467 kB, estimate=4467 kB; lsn=0/194C950, redo lsn=0/194C918
+2024-01-25 02:07:03.769 WAT [5461] LOG:  checkpoint starting: time
+2024-01-25 02:07:08.100 WAT [5461] LOG:  checkpoint complete: wrote 43 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.283 s, sync=0.022 s, total=4.332 s; sync files=38, longest=0.003 s, average=0.001 s; distance=160 kB, estimate=4037 kB; lsn=0/1974B28, redo lsn=0/1974AF0
+2024-01-25 02:07:20.625 WAT [6706] ERROR:  column "Ankara Bag" does not exist at character 58
+2024-01-25 02:07:20.625 WAT [6706] STATEMENT:  INSERT INTO public."bags" 
+	(name, price, image) 
+	VALUES ("Ankara Bag", 450.50, "url/path.jpg")
+2024-01-25 02:09:25.559 WAT [6932] ERROR:  column "table_name" does not exist at character 26
+2024-01-25 02:09:25.559 WAT [6932] STATEMENT:  SELECT *
+	FROM bags
+	WHERE table_name = 'bags' 
+	AND table_schema = 'public'
+2024-01-25 02:11:59.371 WAT [7250] ERROR:  column "1" does not exist at character 62
+2024-01-25 02:11:59.371 WAT [7250] STATEMENT:  INSERT INTO public."bags" 
+	(id, name, price, image) 
+	VALUES ("1","Ankara Bag", "450.50", "url/path.jpg")
+2024-01-25 02:12:19.179 WAT [7276] ERROR:  column "1" does not exist at character 62
+2024-01-25 02:12:19.179 WAT [7276] STATEMENT:  INSERT INTO public."bags" 
+	(id, name, price, image) 
+	VALUES ("1","Ankara Bag", "450.50", "url/path.jpg")
+2024-01-25 02:12:29.625 WAT [7279] ERROR:  column "1" does not exist at character 62
+2024-01-25 02:12:29.625 WAT [7279] STATEMENT:  INSERT INTO public."bags" 
+	(id, name, price, image) 
+	VALUES ("1","Ankara Bag", "450.50", "url/path.jpg")
+2024-01-25 02:12:48.325 WAT [7287] ERROR:  column "1" does not exist at character 52
+2024-01-25 02:12:48.325 WAT [7287] STATEMENT:  INSERT INTO bags
+	(id, name, price, image) 
+	VALUES ("1","Ankara Bag", "450.50", "url/path.jpg")
+2024-01-25 02:15:25.862 WAT [8293] ERROR:  relation "links" already exists
+2024-01-25 02:15:25.862 WAT [8293] STATEMENT:  CREATE TABLE links (
+	  id SERIAL PRIMARY KEY, 
+	  url VARCHAR(255) NOT NULL, 
+	  name VARCHAR(255) NOT NULL, 
+	  description VARCHAR (255), 
+	  last_update DATE
+	)
+2024-01-25 02:15:52.402 WAT [8307] ERROR:  relation "links" already exists
+2024-01-25 02:15:52.402 WAT [8307] STATEMENT:  CREATE TABLE links (
+	  id SERIAL PRIMARY KEY, 
+	  url VARCHAR(255) NOT NULL, 
+	  name VARCHAR(255) NOT NULL, 
+	  description VARCHAR (255), 
+	  last_update DATE
+	)
+2024-01-25 02:17:03.203 WAT [5461] LOG:  checkpoint starting: time
+2024-01-25 02:17:09.259 WAT [5461] LOG:  checkpoint complete: wrote 60 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.983 s, sync=0.040 s, total=6.057 s; sync files=47, longest=0.014 s, average=0.001 s; distance=215 kB, estimate=3654 kB; lsn=0/19AA7E8, redo lsn=0/19AA7B0
+2024-01-25 02:22:03.357 WAT [5461] LOG:  checkpoint starting: time
+2024-01-25 02:22:08.679 WAT [5461] LOG:  checkpoint complete: wrote 53 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.269 s, sync=0.022 s, total=5.322 s; sync files=38, longest=0.002 s, average=0.001 s; distance=256 kB, estimate=3315 kB; lsn=0/19EAA30, redo lsn=0/19EA9F8
+2024-01-25 02:27:03.763 WAT [5461] LOG:  checkpoint starting: time
+2024-01-25 02:27:04.902 WAT [5461] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.116 s, sync=0.006 s, total=1.140 s; sync files=8, longest=0.002 s, average=0.001 s; distance=21 kB, estimate=2985 kB; lsn=0/19F01E0, redo lsn=0/19F01A8
+2024-01-25 03:07:52.209 WAT [5458] LOG:  received fast shutdown request
+2024-01-25 03:07:52.212 WAT [5458] LOG:  aborting any active transactions
+2024-01-25 03:07:52.218 WAT [5458] LOG:  background worker "logical replication launcher" (PID 5466) exited with exit code 1
+2024-01-25 03:07:52.220 WAT [5461] LOG:  shutting down
+2024-01-25 03:07:52.224 WAT [5461] LOG:  checkpoint starting: shutdown immediate
+2024-01-25 03:07:52.250 WAT [5461] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.011 s, sync=0.002 s, total=0.028 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=2687 kB; lsn=0/19F0290, redo lsn=0/19F0290
+2024-01-25 03:07:52.271 WAT [5458] LOG:  database system is shut down
